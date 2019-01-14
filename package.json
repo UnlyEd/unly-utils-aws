@@ -1,18 +1,18 @@
 {
-  "name": "unly-utils-aws",
+  "name": "@unly/utils-aws",
   "version": "1.0.0",
   "description": "Library of tools to help and improve aws development",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UnlyEd/unly-utils-aws.git"
+    "url": "git+https://github.com/UnlyEd/utils-aws.git"
   },
   "author": "unlyEd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/UnlyEd/unly-utils-aws/issues"
+    "url": "https://github.com/UnlyEd/utils-aws/issues"
   },
-  "homepage": "https://github.com/UnlyEd/unly-utils-aws",
+  "homepage": "https://github.com/UnlyEd/utils-aws",
   "jest": {
     "verbose": true,
     "testEnvironment": "node"
