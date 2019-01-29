@@ -1,6 +1,6 @@
-const APIResponse = require('./lib/APIResponse');
-const headers = require('./lib/headers');
-const isHostedOnAws = require('./lib/isHostedOnAws');
+const APIResponse = require('./src/APIResponse');
+const headers = require('./src/headers');
+const isHostedOnAws = require('./src/isHostedOnAws');
 
 module.exports = {
   isHostedOnAws,
