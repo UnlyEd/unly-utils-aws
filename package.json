@@ -2,7 +2,7 @@
   "name": "@unly/utils-aws",
   "version": "1.0.1",
   "description": "Library of tools to help and improve aws development",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UnlyEd/utils-aws.git"
@@ -17,6 +17,10 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
+  "files": [
+    "/lib",
+    "/API.md"
+  ],
   "jest": {
     "verbose": true,
     "testEnvironment": "node"
