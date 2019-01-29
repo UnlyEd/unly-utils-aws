@@ -1,4 +1,6 @@
-# unly-utils-aws
+[![Build Status](https://travis-ci.com/UnlyEd/utils-aws.svg?branch=master)](https://travis-ci.com/UnlyEd/utils-aws)
+
+# Utils Aws
 
 This project is a transversal project, tools to help and improve aws development
 
@@ -7,17 +9,17 @@ Install:
 npm or yarn
 
 ```
-    npm install https://github.com/UnlyEd/unly-aws-utils.git
+  npm install @unly/utils-aws
 ```
 
 Use:
 
 ```
-import { isHostedOnAws } from 'unly-utils-aws';
+import { isHostedOnAws } from 'utils-aws';
 
 or
 
-import isHostedOnAws from 'unly-aws-utils/lib';
+import isHostedOnAws from 'utils-aws/lib';
 ```
 
 ### Library:
