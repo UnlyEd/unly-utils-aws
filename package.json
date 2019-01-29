@@ -1,6 +1,6 @@
 {
   "name": "@unly/utils-aws",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library of tools to help and improve aws development",
   "main": "index.js",
   "repository": {
