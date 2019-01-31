@@ -1,9 +1,9 @@
 'use strict';
 
-const isHostedOnAws = require('./isHostedOnAws');
+import isHostedOnAWS from './isHostedOnAws';
 
 describe('isHostedOnAws', () => {
   test('should return false if we run it locally', () => {
-    expect(isHostedOnAws()).toEqual(false);
+    expect(isHostedOnAWS()).toEqual(false);
   });
 });

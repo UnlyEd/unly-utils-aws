@@ -1,8 +1,8 @@
-const APIResponse = require('./APIResponse');
-const headers = require('./headers');
-const isHostedOnAws = require('./isHostedOnAws');
+import * as APIResponse from './APIResponse';
+import * as headers from './headers';
+import isHostedOnAws from './isHostedOnAws';
 
-module.exports = {
+export {
   APIResponse,
   headers,
   isHostedOnAws,

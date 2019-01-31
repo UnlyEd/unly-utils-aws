@@ -7,7 +7,7 @@
  * @param headers
  * @returns {string|null}
  */
-const getDevice = (headers) => {
+export const getDevice = (headers) => {
   if (headers['CloudFront-Is-Desktop-Viewer'] === 'true') {
     return 'desktop';
   }
@@ -30,7 +30,7 @@ const getDevice = (headers) => {
  * @param sep
  * @returns {string|null}
  */
-const getMainIpAddress = (xForwardedFor, sep = ', ') => {
+export const getMainIpAddress = (xForwardedFor, sep = ', ') => {
   if (!xForwardedFor || !xForwardedFor.length) {
     return null;
   }
@@ -46,7 +46,7 @@ const getMainIpAddress = (xForwardedFor, sep = ', ') => {
  * @param sep
  * @returns {Array<string>|null}
  */
-const getForwardedIpAddresses = (xForwardedFor, sep = ', ') => {
+export const getForwardedIpAddresses = (xForwardedFor, sep = ', ') => {
   if (!xForwardedFor || !xForwardedFor.length) {
     return null;
   }
@@ -65,17 +65,10 @@ const getForwardedIpAddresses = (xForwardedFor, sep = ', ') => {
  * @param headers
  * @returns {{device: string, country: string|null, userAgent: string|null, ipAddress: string, forwardedIpAddress: Array<string>}}
  */
-const getHeadersUsefulData = (headers = {}) => ({
+export const getHeadersUsefulData = (headers = {}) => ({
   device: getDevice(headers),
   country: headers['CloudFront-Viewer-Country'] || null,
   userAgent: headers['User-Agent'] || null,
   ipAddress: getMainIpAddress(headers['X-Forwarded-For']),
   forwardedIpAddress: getForwardedIpAddresses(headers['X-Forwarded-For']),
 });
-
-module.exports = {
-  getDevice,
-  getForwardedIpAddresses,
-  getHeadersUsefulData,
-  getMainIpAddress,
-};

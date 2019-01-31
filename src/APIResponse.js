@@ -7,7 +7,7 @@
  * @param headers
  * @returns {{headers: any, body: string, statusCode: *}}
  */
-const buildJSONResponse = (statusCode, body, headers) => ({
+export const buildJSONResponse = (statusCode, body, headers) => ({
   statusCode,
   headers: Object.assign({
     'Access-Control-Allow-Origin': '*',
@@ -24,7 +24,7 @@ const buildJSONResponse = (statusCode, body, headers) => ({
  * @param charset
  * @returns {{headers: {'content-disposition': string, 'content-type': string}, body: string, statusCode: number}}
  */
-const buildCSVResponse = ({
+export const buildCSVResponse = ({
   data, statusCode = 200, filename = 'file', charset = 'utf-8',
 }) => ({
   statusCode,
@@ -41,7 +41,7 @@ const buildCSVResponse = ({
  * @param headers
  * @returns {{headers: any, body: string, statusCode: *}}
  */
-const success = (data, headers = {}) => buildJSONResponse(200, data, headers);
+export const success = (data, headers = {}) => buildJSONResponse(200, data, headers);
 
 /**
  *
@@ -49,7 +49,7 @@ const success = (data, headers = {}) => buildJSONResponse(200, data, headers);
  * @param headers
  * @returns {{headers, body, statusCode}}
  */
-const failure = (data, headers = {}) => buildJSONResponse(500, data, headers);
+export const failure = (data, headers = {}) => buildJSONResponse(500, data, headers);
 
 /**
  *
@@ -57,7 +57,7 @@ const failure = (data, headers = {}) => buildJSONResponse(500, data, headers);
  * @param headers
  * @returns {{headers, body, statusCode}}
  */
-const redirect = (data, headers = {}) => buildJSONResponse(302, data, headers);
+export const redirect = (data, headers = {}) => buildJSONResponse(302, data, headers);
 
 /**
  *
@@ -65,13 +65,4 @@ const redirect = (data, headers = {}) => buildJSONResponse(302, data, headers);
  * @param headers
  * @returns {{headers, body, statusCode}}
  */
-const unauthorized = (data, headers = {}) => buildJSONResponse(403, data, headers);
-
-module.exports = {
-  buildCSVResponse,
-  buildJSONResponse,
-  success,
-  failure,
-  redirect,
-  unauthorized,
-};
+export const unauthorized = (data, headers = {}) => buildJSONResponse(403, data, headers);

@@ -8,4 +8,4 @@
  */
 const isHostedOnAWS = () => !!(process.env.LAMBDA_TASK_ROOT || process.env.AWS_EXECUTION_ENV);
 
-module.exports = isHostedOnAWS;
+export default isHostedOnAWS;
