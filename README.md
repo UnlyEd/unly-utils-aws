@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.com/UnlyEd/utils-aws.svg?branch=master)](https://travis-ci.com/UnlyEd/utils-aws)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d6bf5bfc40cdabba8241/maintainability)](https://codeclimate.com/github/UnlyEd/utils-aws/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d6bf5bfc40cdabba8241/test_coverage)](https://codeclimate.com/github/UnlyEd/utils-aws/test_coverage)
 
 # Utils Aws
 
